@@ -8,3 +8,6 @@ class Hello(commands.Cog):
     @commands.command()
     async def hello(self, ctx):
         await ctx.send('Szia Natsuki#5480!')
+
+def setup(bot):
+    bot.add_cog(Hello(bot))
