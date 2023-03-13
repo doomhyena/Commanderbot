@@ -2,7 +2,7 @@ import nextcord
 from nextcord.ext import commands
 import os
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='!', intents=nextcord.Intents.all())
 
 @bot.event
 async def on_ready():
