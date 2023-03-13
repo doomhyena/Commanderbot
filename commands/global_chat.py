@@ -1,8 +1,8 @@
 import json
-import discord
+import nextcord
+from nextcord.ext import commands
 import datetime
 from random import randint
-from discord.ext import commands
 
 
 class GlobalChat(commands.Cog):
@@ -70,7 +70,7 @@ class GlobalChat(commands.Cog):
                     await message.delete()
                     for ids in channel_id:
                         if message.channel.id != ids:
-                            message_embed = discord.Embed(color=discord.Color.green())
+                            message_embed = nextcord.Embed(color=nextcord.Color.green())
 
                             message_embed.timestamp = datetime.datetime.utcnow()
                             message_embed.set_author(icon_url=message.author.avatar_url, name=f'{message.author}')

@@ -1,6 +1,6 @@
-import discord
+import nextcord
+from nextcord.ext import commands
 import datetime
-from discord.ext import commands
 
 class Segitsegcommand(commands.Cog):
     def __init__(self, bot):
@@ -8,7 +8,7 @@ class Segitsegcommand(commands.Cog):
 
     @commands.command()
     async def segitseg(self, ctx):
-        embed = discord.Embed(title="Ez a segítség menü. tt találod meg a parancsaimat!", description = "Minden parancs elé tegyél !-et hogy működjön a parancs!", color = 0xff0000)
+        embed = nextcord.Embed(title="Ez a segítség menü. tt találod meg a parancsaimat!", description = "Minden parancs elé tegyél !-et hogy működjön a parancs!", color = 0xff0000)
 
         embed.timestamp = datetime.datetime.utcnow()
         embed.set_author(icon_url=ctx.author.avatar_url, name=f'{ctx.author}')

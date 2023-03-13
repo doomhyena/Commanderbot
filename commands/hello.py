@@ -1,4 +1,5 @@
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 
 class Hello(commands.Cog):
     def __init__(self, bot):
@@ -6,7 +7,4 @@ class Hello(commands.Cog):
 
     @commands.command()
     async def hello(self, ctx):
-        await ctx.send('Hello!')
-
-def setup(bot):
-    bot.add_cog(Hello(bot))
+        await ctx.send('Szia Natsuki#5480!')
