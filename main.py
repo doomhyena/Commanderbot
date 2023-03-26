@@ -11,4 +11,4 @@ async def on_ready():
         if filename.endswith('.py'):
             bot.load_extension(f'commands.{filename[:-3]}')
 
-bot.run('MTA3MjI0MzU5MjIxMjUyMTA0MA.Ga0osC._Dl7IuxXWYU24iUFoHD_JLX8xIc3xROTUep0iU')
+bot.run('TOKEN')
